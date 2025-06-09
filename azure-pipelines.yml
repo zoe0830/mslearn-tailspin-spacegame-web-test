@@ -19,9 +19,14 @@ steps:
   inputs:
     verbose: false
 
-- script: './node_modules/.bin/sass Tailspin.SpaceGame.Web/wwwroot:Tailspin.SpaceGame.Web/wwwroot'
-  displayName: 'Compile Sass assets (using Dart Sass)'
+- script: |
+    npm uninstall node-sass
+    npm install sass --save-dev
+  displayName: 'Patch: Replace node-sass with sass (for CI build)'
 
+- script: './node_modules/.bin/sass Tailspin.SpaceGame.Web/wwwroot:Tailspin.SpaceGame.Web/wwwroot'
+  displayName: 'Compile Sass assets (Dart Sass)'
+  
 - task: gulp@1
   displayName: 'Run gulp tasks'
 
