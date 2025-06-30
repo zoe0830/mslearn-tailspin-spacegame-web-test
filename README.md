@@ -1,4 +1,4 @@
-
+[![Build Status](https://dev.azure.com/DevopsLearn25/demoproject/_apis/build/status%2Fzoe0830.mslearn-tailspin-spacegame-web-test?branchName=main)](https://dev.azure.com/DevopsLearn25/demoproject/_build/latest?definitionId=16&branchName=main)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
